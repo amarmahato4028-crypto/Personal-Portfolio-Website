@@ -14,6 +14,7 @@
 <body>
 
 <a class="skip-link" href="#main">Skip to content</a>
+<div class="scroll-progress" id="scrollProgress"></div>
 
 <button class="index-toggle" id="indexToggle" aria-expanded="false" aria-controls="indexNav" aria-label="Open section index">
   <span></span><span></span><span></span>
@@ -23,11 +24,12 @@
   <a href="#top" class="index-brand">AKM</a>
   <ol class="index-list">
     <li><a href="#profile"><span class="idx-num">01</span>Profile</a></li>
-    <li><a href="#stack"><span class="idx-num">02</span>Stack</a></li>
-    <li><a href="#experience"><span class="idx-num">03</span>Experience</a></li>
-    <li><a href="#work"><span class="idx-num">04</span>Selected&nbsp;Work</a></li>
-    <li><a href="#education"><span class="idx-num">05</span>Education</a></li>
-    <li><a href="#contact"><span class="idx-num">06</span>Contact</a></li>
+    <li><a href="#approach"><span class="idx-num">02</span>Approach</a></li>
+    <li><a href="#stack"><span class="idx-num">03</span>Stack</a></li>
+    <li><a href="#experience"><span class="idx-num">04</span>Experience</a></li>
+    <li><a href="#work"><span class="idx-num">05</span>Selected&nbsp;Work</a></li>
+    <li><a href="#education"><span class="idx-num">06</span>Education</a></li>
+    <li><a href="#contact"><span class="idx-num">07</span>Contact</a></li>
   </ol>
   <a class="index-resume" href="assets/Amar_Kumar_Mahato_Resume.pdf" download>Download résumé</a>
 </nav>
@@ -51,6 +53,12 @@
         <a class="btn btn-line" href="https://www.linkedin.com/in/amarkmahato/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
       <p class="hero-location">High Point, NC — open to entry-level backend &amp; software engineering roles</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">7.52</span><span class="stat-label">GPA · B.Tech IT</span></div>
+        <div class="stat"><span class="stat-num">1</span><span class="stat-label">Live product shipped</span></div>
+        <div class="stat"><span class="stat-num">3NF</span><span class="stat-label">Schema design</span></div>
+        <div class="stat"><span class="stat-num">2</span><span class="stat-label">Certifications earned</span></div>
+      </div>
     </div>
 
     <div class="hero-diagram">
@@ -109,23 +117,64 @@
     </div>
   </section>
 
-  <!-- 02 STACK -->
-  <section class="section" id="stack">
+  <!-- 02 APPROACH -->
+  <section class="section" id="approach">
     <p class="section-index">02</p>
+    <div class="section-body">
+      <h2 class="section-title">Approach</h2>
+      <p class="lede">How I build, in three steps — the same order every time.</p>
+      <div class="approach-grid">
+        <div class="approach-step">
+          <span class="approach-num">01</span>
+          <h3>Model the data</h3>
+          <p>Map the entities and relationships first and normalize the schema, so the structure stays consistent as the data grows.</p>
+        </div>
+        <div class="approach-step">
+          <span class="approach-num">02</span>
+          <h3>Query &amp; validate</h3>
+          <p>Write the SQL that answers the real questions — CTEs, window functions — and check it against edge cases before anything is built on top of it.</p>
+        </div>
+        <div class="approach-step">
+          <span class="approach-num">03</span>
+          <h3>Ship the product</h3>
+          <p>Wrap it in an API or interface and deploy it somewhere real, not just a local notebook or script.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 STACK -->
+  <section class="section" id="stack">
+    <p class="section-index">03</p>
     <div class="section-body">
       <h2 class="section-title">Stack</h2>
       <div class="stack-grid">
         <div class="stack-group">
           <h3>Languages</h3>
-          <ul><li>Python</li><li>SQL</li><li>JavaScript (basic)</li></ul>
+          <ul>
+            <li><span>Python</span><span class="prof-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>SQL</span><span class="prof-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>JavaScript (basic)</span><span class="prof-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></li>
+          </ul>
         </div>
         <div class="stack-group">
           <h3>Frameworks &amp; Tools</h3>
-          <ul><li>Django</li><li>REST APIs</li><li>Streamlit</li><li>pandas</li><li>Git / GitHub</li></ul>
+          <ul>
+            <li><span>Django</span><span class="prof-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></li>
+            <li><span>REST APIs</span><span class="prof-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></li>
+            <li><span>Streamlit</span><span class="prof-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></li>
+            <li><span>pandas</span><span class="prof-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></li>
+            <li><span>Git / GitHub</span><span class="prof-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+          </ul>
         </div>
         <div class="stack-group">
           <h3>Databases</h3>
-          <ul><li>SQLite</li><li>3NF schema design</li><li>Query optimization</li><li>CTEs &amp; window functions</li></ul>
+          <ul>
+            <li><span>SQLite</span><span class="prof-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>3NF schema design</span><span class="prof-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+            <li><span>Query optimization</span><span class="prof-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></li>
+            <li><span>CTEs &amp; window functions</span><span class="prof-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span></li>
+          </ul>
         </div>
         <div class="stack-group">
           <h3>Core CS</h3>
@@ -135,9 +184,9 @@
     </div>
   </section>
 
-  <!-- 03 EXPERIENCE -->
+  <!-- 04 EXPERIENCE -->
   <section class="section" id="experience">
-    <p class="section-index">03</p>
+    <p class="section-index">04</p>
     <div class="section-body">
       <h2 class="section-title">Experience</h2>
       <article class="exp-entry">
@@ -155,9 +204,9 @@
     </div>
   </section>
 
-  <!-- 04 SELECTED WORK -->
+  <!-- 05 SELECTED WORK -->
   <section class="section" id="work">
-    <p class="section-index">04</p>
+    <p class="section-index">05</p>
     <div class="section-body">
       <h2 class="section-title">Selected work</h2>
 
@@ -191,13 +240,28 @@
         <div class="work-tags">
           <span>SQLite</span><span>SQL</span><span>Python</span><span>pandas</span><span>Streamlit</span>
         </div>
+
+        <div class="case-study">
+          <div>
+            <h4>Challenge</h4>
+            <p>Retail transaction data is only useful if customers, orders, and products stay consistent as volume grows — a flat spreadsheet breaks down fast.</p>
+          </div>
+          <div>
+            <h4>Approach</h4>
+            <p>Modeled four related entities in 3NF first, then layered <code>RANK</code> and <code>LAG</code> window functions on top to compute lifetime value and revenue growth without duplicating data.</p>
+          </div>
+          <div>
+            <h4>Result</h4>
+            <p>A public, interactive Streamlit dashboard anyone can query live — the schema decisions made upfront are what let the analytics layer stay fast and accurate.</p>
+          </div>
+        </div>
       </article>
     </div>
   </section>
 
-  <!-- 05 EDUCATION -->
+  <!-- 06 EDUCATION -->
   <section class="section" id="education">
-    <p class="section-index">05</p>
+    <p class="section-index">06</p>
     <div class="section-body">
       <h2 class="section-title">Education &amp; certifications</h2>
       <div class="edu-row">
@@ -213,9 +277,9 @@
     </div>
   </section>
 
-  <!-- 06 CONTACT -->
+  <!-- 07 CONTACT -->
   <section class="section contact" id="contact">
-    <p class="section-index">06</p>
+    <p class="section-index">07</p>
     <div class="section-body">
       <h2 class="section-title">Contact</h2>
       <p class="lede">Looking for an entry-level backend or software engineering hire? I'd like to hear from you.</p>
